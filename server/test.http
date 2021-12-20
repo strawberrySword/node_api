@@ -1,0 +1,49 @@
+
+POST http://127.0.0.1:3000/api/user/register
+Content-Type: application/json
+
+{
+    "name": "bobbyby",
+    "password": "12sdsdfsdfdsf3"
+}
+
+###
+POST http://127.0.0.1:3000/api/user/login
+Content-Type: application/json
+
+{
+    "name": "bobbyby",
+    "password": "12sdsdfsdfdsf3"
+}
+
+
+###
+POST  http://127.0.0.1:3000/posts
+Content-Type: application/json
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWFhMWExYjQ3ODRlYWI1NGYzY2Q2ZGUiLCJpYXQiOjE2Mzg1NDA5NDB9.5DR11JfUaNWqWkTkYz4meAEOj-nrylDrOiajlj4wMZE
+
+{
+    "title": "test02",
+    "description":"async await this bitch"
+}
+
+###
+
+GET http://127.0.0.1:3000/posts
+
+###
+
+GET http://127.0.0.1:3000/posts/61a8f760db571cf77466c9d2
+
+###
+
+DELETE  http://127.0.0.1:3000/posts/61a8f760db571cf77466c9d2
+
+###
+
+PATCH http://127.0.0.1:3000/posts/61a8f768db571cf77466c9d6
+Content-Type: application/json
+
+{
+    "title": "poop"
+}
